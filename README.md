@@ -12,7 +12,7 @@ Criação do ambiente de trabalho isolado e do cluster no Confluent Cloud, garan
 * **Identidades**: `desafio-producer` (escrita) e `desafio-consumer` (leitura)
 
 **Evidência de Configuração:**
-```bash
+```bash````
 confluent iam service-account list
 confluent iam acl list --service-account <ID_DA_SA>
 
