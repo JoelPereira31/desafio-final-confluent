@@ -1,0 +1,14 @@
+{
+  "name": "postgres-cdc-connector",
+  "config": {
+    "connector.class": "io.confluent.connect.postgres.PostgresCdcSourceV2",
+    "tasks.max": "1",
+    "database.hostname": "${env.POSTGRES_HOST}",
+    "database.port": "5432",
+    "database.user": "${env.POSTGRES_USER}",
+    "database.password": "${env.POSTGRES_PASSWORD}",
+    "database.dbname": "${env.POSTGRES_DATABASE}",
+    "output.data.format": "AVRO",
+    "heartbeat.interval.ms": "60000"
+  }
+}
