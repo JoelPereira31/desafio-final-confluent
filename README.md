@@ -12,9 +12,10 @@ Criação do ambiente de trabalho isolado e do cluster no Confluent Cloud, garan
 * **Identidades**: `desafio-producer` (escrita) e `desafio-consumer` (leitura)
 
 **Evidência de Configuração:**
-```bash````
+```bash
 confluent iam service-account list
 confluent iam acl list --service-account <ID_DA_SA>
+```
 
 📜 Camada 2: Contrato de Dados (Schema Registry)
 Definição dos esquemas utilizando Avro para garantir a governança e a compatibilidade dos dados ao longo do tempo.
